@@ -42,23 +42,22 @@ nav ul li a:hover {
 }
 
 main {
-    display: flex;
-    flex-grow: 1;
+    display: grid;
+    grid-template-columns: 3fr 1fr; /* Main content takes up 3 parts, aside 1 part */
+    gap: 20px; /* Spacing between columns */
     padding: 20px;
     background-color: #d0e8f2; /* Light Gray-Blue */
+    flex-grow: 1;
 }
 
 .main-content {
-    flex: 3;
     background-color: #d0e8f2;
     padding: 20px;
-    margin-right: 20px;
     border-radius: 8px;
     color: #333; /* Dark text for contrast */
 }
 
 aside {
-    flex: 1;
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
