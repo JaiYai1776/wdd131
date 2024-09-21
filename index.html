@@ -3,9 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals, Jean-Albert Arnold, Web Development">
+    <meta name="author" content="Jean-Albert Arnold">
+    <title>WDD 131 - Dynamic Web Fundamentals - Jean-Albert Arnold</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-    <h1>WDD 131 - Jean's Website</h1>
+
+    <header>
+        <h1>WDD 131 - Dynamic Web Fundamentals</h1>
+        <nav>
+            <ul>
+                <li><a href="https://linkedin.com">LinkedIn</a></li>
+                <li><a href="https://byui.instructure.com">I-Learn</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures">Favorite Scripture</a></li>
+                <li><a href="#">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Card 1: About Me -->
+        <section class="card about-me">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Me</h2>
+                    <p>Hello! My name is Jean-Albert Arnold. I live in Humansville, Missouri, with my wife and daughter. We run a small farmette, and I am passionate about web development and exploring new technologies. I am constantly learning new programming languages and enjoy working on creative projects.</p>
+                </div>
+                <div class="about-image">
+                    <img src="images/my-picture.jpg" alt="Jean-Albert Arnold">
+                </div>
+            </div>
+            <div class="about-location">
+                <h3>Missouri, US</h3>
+                <p>Missouri is known for its beautiful landscapes, from the Ozark Mountains to its vast plains. It's a place filled with rich history, friendly people, and a deep connection to nature. Living in Missouri provides a great balance of rural tranquility and access to modern conveniences.</p>
+            </div>
+        </section>
+
+        <!-- Card 2: Combined Resources -->
+        <section class="card">
+            <h2>Web Development & JavaScript Resources</h2>
+            <img src="images/resource1.jpg" alt="Resource 1 Image">
+            <p>Here are some great resources to get started with web development and JavaScript:</p>
+            <ul>
+                <li><a href="https://developer.mozilla.org">MDN Web Docs</a> - Comprehensive resource for all things web development.</li>
+                <li><a href="https://w3schools.com">W3Schools</a> - Easy-to-understand tutorials for web development.</li>
+                <li><a href="https://stackoverflow.com">Stack Overflow</a> - Community-driven Q&A site for programming.</li>
+                <li><a href="https://javascript.info">JavaScript Info</a> - In-depth tutorials for learning JavaScript.</li>
+                <li><a href="https://eloquentjavascript.net">Eloquent JavaScript</a> - A great book for learning JavaScript in depth.</li>
+                <li><a href="https://freecodecamp.org">FreeCodeCamp</a> - Free tutorials and exercises to learn programming.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Jean-Albert Arnold, Missouri, USA</p>
+        <p id="lastModified"></p>
+    </footer>
+
 </body>
 </html>
