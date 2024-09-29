@@ -1,27 +1,27 @@
 /* temples-large.css */
 
 /* Styles for Larger View */
-@media (min-width: 32rem) {
+@media (min-width: 640px) {
     header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1.5rem;
+        max-width: 1200px;
+        margin: auto;
     }
 
     #hamburger {
-        display: none;
+        display: none; /* Hide hamburger in larger views */
     }
 
+
+
     #nav-links {
-        display: flex;
-        position: static;
+        display: flex; /* Show nav links in larger views */
         flex-direction: row;
         margin-left: auto;
+        max-width: 800px;
     }
 
     #nav-links li {
-        margin: 0 1rem;
+        flex: 1 1 auto;
     }
 
     main {
