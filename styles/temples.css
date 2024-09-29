@@ -1,74 +1,95 @@
-/* temples.css */
+/* Define CSS Variables */
+:root {
+    --primary-bg-color: #6a5e8d;
+    --secondary-bg-color: #36454f;
+    --accent-bg-color: #f8f9fa;
+    --hover-bg-color: #525c64;
+    --text-color: #fff;
+    --text-color-dark: #333;
+    --highlight-color: yellow;
+    --border-color: rgba(0, 0, 0, 0.1);
+    --font-family: 'Open Sans', sans-serif;
+}
 
 /* General Styles */
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--font-family);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     line-height: 1.6;
-    background-color: #f8f9fa;
-    color: #333;
+    background-color: var(--accent-bg-color);
+    color: var(--text-color-dark);
 }
 
 /* Header Styles */
 header {
-    background-color: #6a5e8d;
-    color: white;
-    padding: 1rem;
-    text-align: center;
-    position: relative;
+    background-color: var(--primary-bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border: 1px solid var(--border-color);
 }
 
-nav {
+.header-container {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+h1 {
+    font-size: 2rem;
+    color: var(--text-color);
 }
 
 #hamburger {
-    display: block;
     background: none;
     border: none;
-    font-size: 1.5rem;
+    font-size: 2rem;
     cursor: pointer;
-    color: white;
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
+    color: var(--text-color);
+    display: block;
+}
+
+nav {
+    background-color: var(--secondary-bg-color);
+    width: 100%;
+    margin: 0 auto;
+    max-width: 800px;
 }
 
 #nav-links {
-    list-style: none;
+    list-style-type: none;
     margin: 0;
     padding: 0;
-    display: none;
+    display: none; /* Hidden by default */
+    background-color: var(--secondary-bg-color);
     flex-direction: column;
-    background-color: #6a5e8d;
-    position: absolute;
-    top: 3rem;
-    right: 1rem;
-    border-radius: 5px;
+    align-items: center;
 }
 
 #nav-links li {
-    margin: 0.5rem 0;
-    text-align: center;
+    width: 100%;
 }
 
 #nav-links a {
-
-    color: white;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
     display: block;
-    transition: background-color 0.3s, transform 0.3s;
+    color: var(--text-color);
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+    transition: background-color 0.3s;
 }
 
 #nav-links a:hover {
-    background-color: #f2b442;
-    transform: scale(1.05);
-    border-radius: 5px;
+    text-decoration: overline;
+    background-color: var(--hover-bg-color);
+}
+
+.active {
+    color: var(--highlight-color);
 }
 
 .hidden {
@@ -108,7 +129,7 @@ figure:hover {
 img {
     width: 100%;
     height: auto;
-    border: 2px solid #6fa7a5;
+    border: 2px solid var(--primary-bg-color);
     border-radius: 10px;
 }
 
