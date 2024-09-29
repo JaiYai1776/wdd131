@@ -11,8 +11,6 @@
         display: none; /* Hide hamburger in larger views */
     }
 
-
-
     #nav-links {
         display: flex; /* Show nav links in larger views */
         flex-direction: row;

@@ -1,5 +1,3 @@
-// temples.js
-
 // Set the current year in the footer
 const yearElement = document.getElementById('year');
 yearElement.textContent = new Date().getFullYear();
@@ -14,6 +12,7 @@ const navLinks = document.getElementById('nav-links');
 
 hamburger.addEventListener('click', () => {
     navLinks.classList.toggle('hidden');
+    navLinks.classList.toggle('show');
     if (navLinks.classList.contains('hidden')) {
         hamburger.textContent = '☰';
     } else {
@@ -29,5 +28,12 @@ navItems.forEach((link) => {
     link.addEventListener('click', (event) => {
         event.preventDefault(); // Prevent default link behavior
         sectionTitle.textContent = link.textContent; // Update the main heading
+
+        // Hide the nav links in mobile view after selection
+        if (window.innerWidth < 640) {
+            navLinks.classList.add('hidden');
+            navLinks.classList.remove('show');
+            hamburger.textContent = '☰';
+        }
     });
 });

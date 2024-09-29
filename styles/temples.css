@@ -56,6 +56,12 @@ nav {
     display: none; /* Hidden by default */
     flex-direction: column;
     align-items: center;
+    transition: max-height 0.3s ease-out;
+}
+
+#nav-links.show {
+    display: flex;
+    max-height: 500px; /* Set max-height for smooth open/close */
 }
 
 #nav-links li {
