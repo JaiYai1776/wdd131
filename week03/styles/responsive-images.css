@@ -1,0 +1,119 @@
+/* Resetting default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling the main container with antique white background */
+body {
+    background-color: #faebd7; /* Antique White */
+    font-family: Arial, sans-serif;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Hero section styles */
+.hero {
+    position: relative;
+    width: 100%;
+    max-width: 1500px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.5s ease-in-out;
+}
+
+.hero:hover {
+    transform: scale(1.03);
+}
+
+/* Styling the picture element with shadow and hover effects */
+.hero-picture {
+    display: block;
+    width: 100%;
+    height: auto;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.hero-picture:hover {
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+    transform: scale(1.02); /* Slight scale effect */
+}
+
+/* Hero overlay for gradient effect */
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6));
+    transition: background 0.5s ease;
+}
+
+.hero:hover .hero-overlay {
+    background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5));
+}
+
+/* Hero text styling */
+.hero-text {
+    position: absolute;
+    bottom: 20%;
+    left: 5%;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.hero:hover .hero-text {
+    transform: translateY(-10%);
+    opacity: 1;
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Styling for button */
+.hero-button {
+    padding: 10px 20px;
+    background-color: #f2b442; /* Matches one of your brand colors */
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.hero-button:hover {
+    background-color: #e99a20;
+    transform: translateY(-5px);
+}
+
+/* Responsive text adjustments for smaller screens */
+@media (max-width: 1000px) {
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+
+    .hero-text p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .hero-te

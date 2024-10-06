@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taiwan</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script defer src="scripts/place.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Taiwan</h1>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <picture>
+                <source media="(min-width: 768px)" srcset="images/place-lg-1160.webp" type="image/webp">
+                <source media="(min-width: 768px)" srcset="images/place-lg-1160.jpg" type="image/jpeg">
+                <source media="(max-width: 767px)" srcset="images/place-sm-full.webp" type="image/webp">
+                <source media="(max-width: 767px)" srcset="images/place-sm-full.jpg" type="image/jpeg">
+                <img src="images/place-lg-1160.jpg" alt="Landscape of Taiwan">
+            </picture>
+
+            <div class="data">
+                <h2>Data</h2>
+                <ul>
+                    <li><strong>Area:</strong> 36,197 sq km</li>
+                    <li><strong>Population:</strong> 23,894,394</li>
+                    <li><strong>Capital:</strong> Taipei</li>
+                    <li><strong>Languages:</strong> Mandarin Chinese</li>
+                    <li><strong>Currency:</strong> New Taiwan Dollar (TWD)</li>
+                    <li><strong>Time Zone:</strong> UTC+8</li>
+                    <li><strong>Calling Code:</strong> +886</li>
+                    <li><strong>Internet TLD:</strong> .tw</li>
+                </ul>
+            </div>
+
+            <div class="weather">
+                <h2>Weather <span class="weather-icon">⛅</span></h2>
+                <ul>
+                    <li><strong>Temperature:</strong> <span id="temperature">25 °C</span></li>
+                    <li><strong>Conditions:</strong> Partly Cloudy</li>
+                    <li><strong>Wind:</strong> 10 km/h</li>
+                    <li><strong>Wind Chill:</strong> <span id="windChill">N/A</span></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Jean-Albert Arnold <br> Last Modified: <span id="lastModified"></span></p>
+    </footer>
+
+    <script>
+        // Script to update current year and last modified date
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+        document.getElementById('lastModified').textContent = document.lastModified;
+    </script>
+</body>
+
+</html>

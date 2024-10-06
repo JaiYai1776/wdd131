@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book of Mormon - Top 10</title>
+    <link rel="stylesheet" href="styles/bom.css">
+</head>
+
+<body>
+    <h1>📖 Book of Mormon - Top 10</h1>
+    <main>
+        <label for="favchap">Enter Book and Chapter: </label>
+        <input type="text" id="favchap" list="chapter-suggestions" placeholder="Alma 5">
+        <datalist id="chapter-suggestions">
+            <option value="1 Nephi 3"></option>
+            <option value="2 Nephi 2"></option>
+            <option value="Alma 32"></option>
+            <option value="Mosiah 2"></option>
+        </datalist>
+        <button type="submit" id="addButton" disabled>Add Chapter</button>
+        <button id="clearAll">Clear All</button>
+        <button id="sortList">Sort Alphabetically (Coming Soon!)</button>
+        <p id="counter">0/10 Chapters Added</p>
+        <ul id="list"></ul>
+    </main>
+    <script src="scripts/bom.js"></script>
+</body>
+
+</html>

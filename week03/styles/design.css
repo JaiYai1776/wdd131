@@ -1,0 +1,176 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    line-height: 1.6;
+    color: #444;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center; /* Center-align all text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+/* Container Styles */
+header, main, footer {
+    max-width: 760px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+    text-align: center; /* Center-align elements within header, main, and footer */
+}
+
+/* Banner Styles */
+.banner {
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center; /* Center the content in the banner */
+    animation: fade-in 1s ease-in-out;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Heading Styles */
+h1, h2, h3 {
+    font-family: 'Merriweather', serif;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #333;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-top: 2rem;
+    color: #0056b3;
+}
+
+h3 {
+    color: #0056b3;
+}
+
+/* Main Layout Styles */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center all content within main */
+    gap: 2rem;
+    margin: 2rem auto;
+    width: 100%;
+    max-width: 760px;
+}
+
+/* Section, Article, and List Adjustments */
+section {
+    width: 100%;
+}
+
+article {
+    max-width: 700px;
+    margin: 0 auto; /* Center the article content */
+}
+
+article p {
+    text-align: center; /* Center-align article text */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+li {
+    padding: 0.5rem 0;
+}
+
+/* Callout Section */
+.callout {
+    max-width: 700px;
+    padding: 1.5rem;
+    color: #ffffff;
+    background-color: #4a148c;
+    font-style: italic;
+    border-left: 5px solid #ffb300;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center-align text inside callout */
+    margin: 0 auto;
+}
+
+/* Footer Styles */
+footer {
+    margin-top: 2rem;
+    padding: 1rem;
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    font-size: 0.9rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Link Styles */
+a {
+    color: #0056b3;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ff9800;
+}
+
+.navigation a:hover {
+    background-color: #ff9800;
+    color: #fff;
+}
+
+/* Button Styles (if used) */
+button {
+    background-color: #0056b3;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #004494;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .banner {
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+
+    h1, h2, h3 {
+        text-align: center;
+    }
+
+    .callout, article, section {
+        width: 90%;
+    }
+}
