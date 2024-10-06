@@ -77,6 +77,7 @@ header {
 .weather {
     bottom: 30px;
     right: 30px;
+    text-align: left; /* Ensure the list stays formatted correctly */
 }
 
 /* Hover effect for data and weather cards */
@@ -186,4 +187,25 @@ footer {
         bottom: 20px;
         right: 20px;
     }
+}
+
+/* SVG-specific styles moved to CSS file */
+.cls-1 {
+    fill: #efcc00;
+}
+
+.cls-2 {
+    fill: none;
+    stroke: #efcc00;
+    stroke-linecap: round;
+    stroke-miterlimit: 10;
+    stroke-width: 3px;
+}
+
+.cls-3 {
+    fill: url(#linear-gradient);
+}
+
+.cls-4 {
+    fill: url(#linear-gradient-2);
 }
