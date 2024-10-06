@@ -121,7 +121,7 @@ footer {
 }
 
 /* Default styling: use emoticon for wider views */
-.weather-icon::before {
+.weather-icon::after {
     content: "⛅";
     font-size: 1.5em;
     vertical-align: middle;
@@ -148,13 +148,18 @@ footer {
         display: inline-block;
         width: 24px;
         height: 24px;
-        background: url('images/weather-icon.svg') no-repeat center center;
-        background-size: contain;
         vertical-align: middle;
     }
 
-    .weather-icon::before {
+    .weather-icon::after {
         content: "";
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        background-image: url('images/weather-icon.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
     }
 }
 
