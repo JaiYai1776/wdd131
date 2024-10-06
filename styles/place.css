@@ -79,6 +79,7 @@ header {
     right: 30px;
 }
 
+/* Hover effect for data and weather cards */
 .data:hover, .weather:hover {
     transform: translateY(-5px);
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
@@ -121,13 +122,24 @@ footer {
 }
 
 /* Default styling: use emoticon for wider views */
+.weather-icon {
+    position: relative;
+    width: 1.5em;
+    height: 1.5em;
+    display: inline-block;
+}
+
+.weather-icon svg {
+    display: none; /* Hide the SVG by default */
+}
+
 .weather-icon::after {
     content: "⛅";
     font-size: 1.5em;
     vertical-align: middle;
-}  
+}
 
-/* Use SVG icon for mobile view */
+/* Mobile view: use SVG icon instead of the emoticon */
 @media (max-width: 767px) {
     .data, .weather {
         position: static;
@@ -145,21 +157,18 @@ footer {
     }
 
     .weather-icon {
-        display: inline-block;
         width: 48px;
         height: 48px;
-        vertical-align: middle;
     }
 
     .weather-icon::after {
-        content: "";
-        display: inline-block;
+        display: none; /* Hide the emoticon in mobile view */
+    }
+
+    .weather-icon svg {
+        display: block; /* Display the SVG in mobile view */
         width: 100%;
         height: 100%;
-        background-image: url('/images/weather-icon2.svg');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: contain;
     }
 }
 
