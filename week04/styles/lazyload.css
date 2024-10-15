@@ -1,0 +1,86 @@
+/* Use a modern sans-serif font */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(240, 227, 203);
+    color: #333;
+    text-align: center;
+}
+
+/* Modern header styling */
+header {
+    background-color: #4a90e2;
+    color: white;
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+    font-weight: 600;
+}
+
+/* Center images with padding, shadows, and hover effect */
+main img {
+    display: block;
+    width: 400px;
+    height: 600px;
+    margin: 30px auto;
+    opacity: 0;
+    border-radius: 10px;
+    animation: fadeIn 1.5s forwards;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Add a modern hover effect for images */
+main img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Text styling for paragraphs */
+main p {
+    max-width: 600px;
+    margin: 0 auto 20px;
+    line-height: 1.6;
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* Footer styling with modern look */
+footer {
+    background-color: #4a90e2;
+    color: white;
+    padding: 10px 0;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Fade in effect for images */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        filter: brightness(0%);
+    }
+    to {
+        opacity: 1;
+        filter: brightness(100%);
+    }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    main img {
+        width: 90%;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    main p {
+        font-size: 1em;
+    }
+}
