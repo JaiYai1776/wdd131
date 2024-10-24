@@ -1,0 +1,147 @@
+/* Define CSS Variables */
+:root {
+    --primary-bg-color: #6a5e8d;
+    --secondary-bg-color: #36454f;
+    --hover-bg-color: #f2b442;
+    --text-color: #fff;
+    --text-color-dark: #333;
+    --font-family: 'Open Sans', sans-serif;
+}
+
+/* General Styles */
+body {
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: var(--text-color-dark);
+}
+
+/* Header Styles */
+header {
+    background-color: var(--primary-bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid var(--text-color);
+}
+
+h1 {
+    font-size: 2rem;
+    color: var(--text-color);
+}
+
+#hamburger {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--text-color);
+    display: block;
+}
+
+nav {
+    background-color: var(--primary-bg-color);
+    width: 100%;
+    margin: 0 auto;
+}
+
+#nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    align-items: center;
+    transition: max-height 0.3s ease-out;
+}
+
+#nav-links.show {
+    display: flex;
+    max-height: 500px; /* Set max-height for smooth open/close */
+}
+
+#nav-links li {
+    width: 100%;
+}
+
+#nav-links a {
+    display: block;
+    color: var(--text-color);
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+#nav-links a:hover {
+    background-color: var(--hover-bg-color);
+    color: var(--text-color-dark);
+    border-radius: 5px;
+    transform: scale(1.05);
+}
+
+.hidden {
+    display: none;
+}
+
+/* Main Styles */
+.section-title {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-top: 2rem;
+}
+
+main {
+    max-width: 100%;
+    padding: 1rem;
+}
+
+.temple-gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.temple-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.temple-card:hover {
+    transform: scale(1.05);
+}
+
+.temple-card img {
+    width: 100%;
+    height: auto;
+}
+
+.temple-details {
+    padding: 1rem;
+}
+
+.temple-details h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.temple-details p {
+    margin: 0.25rem 0;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #2a243e;
+    color: #fffae3;
+    text-align: center;
+    padding: 1rem;
+}

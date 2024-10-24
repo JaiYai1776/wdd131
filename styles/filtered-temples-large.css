@@ -1,0 +1,33 @@
+/* temples-large.css */
+
+/* Styles for Larger View */
+@media (min-width: 640px) {
+    header {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    #hamburger {
+        display: none; /* Hide hamburger in larger views */
+    }
+
+    #nav-links {
+        display: flex; /* Show nav links in larger views */
+        flex-direction: row;
+        margin-left: auto;
+        max-width: 800px;
+    }
+
+    #nav-links li {
+        flex: 1 1 auto;
+    }
+
+    main {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .temple-gallery {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}

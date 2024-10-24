@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore temples around the world with beautiful images and descriptions. Learn about ancient and modern temples, large and small, from various cultures and locations." />
+    <meta name="author" content="Jean-Albert Arnold" />
+    <title>Temples of the World</title>
+    <!-- Link to CSS files -->
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <!-- Link to JavaScript file -->
+    <script defer src="scripts/filtered-temples.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Temples of the World</h1>
+            <button id="hamburger" aria-label="Open Menu">☰</button>
+        </div>
+        <nav>
+            <ul id="nav-links" class="hidden">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Old</a></li>
+                <li><a href="#">New</a></li>
+                <li><a href="#">Large</a></li>
+                <li><a href="#">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2 class="section-title">Temples</h2>
+        <section class="temple-gallery">
+            <!-- Temple cards will be inserted here dynamically by JavaScript -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Jean-Albert Arnold. All rights reserved.</p>
+        <p>Last Updated: <span id="last-modified"></span></p>
+    </footer>
+</body>
+</html>
