@@ -4,9 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Review Form</title>
+    <meta name="description" content="Submit your product review, rate features, and provide feedback on your recent purchase.">
+    <meta name="author" content="JeanALbert Arnold">
     <link rel="stylesheet" href="styles/form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 <body>
+
+    <!-- Main Heading -->
+    <h1>Product Review Form</h1>
+
     <form action="review.html" method="get" id="productReviewForm">
         
         <!-- Product Name -->
@@ -49,7 +57,6 @@
             <input type="checkbox" id="design" name="features" value="design">
             <label for="design">Design</label>
         </fieldset>
-        
 
         <!-- Written Review -->
         <label for="writtenReview">✍️ Written Review</label>
@@ -60,12 +67,14 @@
         <input type="text" id="userName" name="userName">
 
         <!-- Form Submission Button -->
-        <input type="submit" value="Submit Review">
+        <input type="submit" value="Submit Product Review">
 
     </form>
+
     <footer>
         <!-- Common footer content here -->
     </footer>
-    <script src="scripts/form.js"></script>
+
+    <script src="scripts/form.js" defer></script>
 </body>
 </html>
