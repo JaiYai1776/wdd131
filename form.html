@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+<body>
+    <form action="review.html" method="get" id="productReviewForm">
+        
+        <!-- Product Name -->
+        <label for="productName">📦 Product Name</label>
+        <select id="productName" name="productName" required>
+            <option value="" disabled selected>Select a Product ...</option>
+        </select>
+
+        <!-- Overall Rating -->
+        <fieldset class="rating">
+            <legend>⭐ Overall Rating</legend>
+            <input type="radio" name="rating" id="rating1" value="1" required>
+            <label for="rating1"></label>
+            <input type="radio" name="rating" id="rating2" value="2">
+            <label for="rating2"></label>
+            <input type="radio" name="rating" id="rating3" value="3">
+            <label for="rating3"></label>
+            <input type="radio" name="rating" id="rating4" value="4">
+            <label for="rating4"></label>
+            <input type="radio" name="rating" id="rating5" value="5">
+            <label for="rating5"></label>
+        </fieldset>
+
+        <!-- Date of Installation -->
+        <label for="installationDate">📅 Date of Installation</label>
+        <input type="date" id="installationDate" name="installationDate" required>
+
+        <!-- Useful Features -->
+        <fieldset class="checkbox-group">
+            <legend>✅ Useful Features (Select all that apply)</legend>
+            <input type="checkbox" id="durability" name="features" value="durability">
+            <label for="durability">Durability</label>
+            
+            <input type="checkbox" id="easeOfUse" name="features" value="easeOfUse">
+            <label for="easeOfUse">Ease of Use</label>
+            
+            <input type="checkbox" id="performance" name="features" value="performance">
+            <label for="performance">Performance</label>
+            
+            <input type="checkbox" id="design" name="features" value="design">
+            <label for="design">Design</label>
+        </fieldset>
+        
+
+        <!-- Written Review -->
+        <label for="writtenReview">✍️ Written Review</label>
+        <textarea id="writtenReview" name="writtenReview"></textarea>
+
+        <!-- User Name -->
+        <label for="userName">👤 User Name</label>
+        <input type="text" id="userName" name="userName">
+
+        <!-- Form Submission Button -->
+        <input type="submit" value="Submit Review">
+
+    </form>
+    <footer>
+        <!-- Common footer content here -->
+    </footer>
+    <script src="scripts/form.js"></script>
+</body>
+</html>
