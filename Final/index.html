@@ -22,17 +22,20 @@
     </header>
 
     <main>
+        <!-- Introduction Section -->
         <section class="intro">
             <h2>Welcome to the World of Esperanto</h2>
             <p>Esperanto is an international language created to foster global understanding. Spoken by a community that spans continents, Esperanto is easy to learn and designed for everyone.</p>
             <a href="why.html" class="cta-btn">Why Learn Esperanto?</a>
         </section>
 
+        <!-- About Esperanto Section -->
         <section class="about-esperanto">
             <h3>About Esperanto</h3>
             <p>Esperanto was developed in 1887 by Dr. L. L. Zamenhof to bridge cultural and linguistic divides. Its simple grammar, phonetic spelling, and diverse vocabulary make it an ideal second language for people worldwide.</p>
         </section>
 
+        <!-- Benefits Section -->
         <section class="benefits">
             <h3>Benefits of Learning Esperanto</h3>
             <ul>
@@ -42,6 +45,7 @@
             </ul>
         </section>
 
+        <!-- Quick Facts Section -->
         <section class="quick-facts">
             <h3>Quick Facts About Esperanto</h3>
             <ul>
@@ -53,16 +57,43 @@
             </ul>
         </section>
 
+        <!-- How to Get Started Section -->
         <section class="get-started">
             <h3>How to Get Started</h3>
             <p>Learning Esperanto is easy! Start with online courses, join a local group, or attend an international Esperanto event. With resources for every level, anyone can start learning today.</p>
             <a href="learn.html" class="cta-btn">Start Learning</a>
+        </section>
+
+        <!-- Join Form Section -->
+        <section id="join-form">
+            <h3>Join the Esperanto Community</h3>
+            <p>Sign up to receive resources, updates, and event invitations from the Esperanto community.</p>
+            
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="interest">Interest in Esperanto:</label>
+                <select id="interest" name="interest">
+                    <option value="beginner">Beginner</option>
+                    <option value="intermediate">Intermediate</option>
+                    <option value="advanced">Advanced</option>
+                </select>
+
+                <label for="message">Message (Optional):</label>
+                <textarea id="message" name="message" rows="4" placeholder="Tell us why you're interested in Esperanto..."></textarea>
+
+                <button type="submit" class="cta-btn">Join Now</button>
+            </form>
         </section>
     </main>
 
     <footer>
         <p>&copy; 2024 Discover Esperanto. All Rights Reserved.</p>
     </footer>
-    <script src="script/final.js"></script>
+    <script src="scripts/final.js"></script>
 </body>
 </html>

@@ -73,3 +73,41 @@ function loadUserPreferences() {
         });
     }
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+    const form = document.querySelector("#join-form form");
+
+    // Display welcome message if form data exists in localStorage
+    const savedData = JSON.parse(localStorage.getItem("esperantoFormData"));
+    if (savedData) {
+        const welcomeMessage = document.createElement("p");
+        welcomeMessage.textContent = `Welcome back, ${savedData.name}! Thanks for joining the Esperanto Community.`;
+        welcomeMessage.style.color = "#014700";
+        document.getElementById("join-form").prepend(welcomeMessage);
+    }
+
+    // Event listener for form submission
+    form.addEventListener("submit", function (event) {
+        event.preventDefault(); // Prevent default form submission
+
+        // Retrieve and trim form values
+        const name = document.getElementById("name").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const interest = document.getElementById("interest").value;
+        const message = document.getElementById("message").value.trim();
+
+        // Validate required fields
+        if (!name || !email) {
+            alert("Please fill in all required fields.");
+            return;
+        }
+
+        // Store data in localStorage
+        const formData = { name, email, interest, message };
+        localStorage.setItem("esperantoFormData", JSON.stringify(formData));
+
+        // Provide user feedback and reset the form
+        alert("Thank you for joining the Esperanto Community! We will contact you soon.");
+        form.reset(); // Clear form fields after submission
+    });
+});
