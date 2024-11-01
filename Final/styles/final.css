@@ -1,0 +1,213 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #014700;
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #019B00;
+    padding: 1rem;
+    color: #ffffff;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    background-color: #014700;
+    color: #ffffff;
+}
+
+/* Button Styling */
+.cta-btn {
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    background-color: #019B00;
+    color: #ffffff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+}
+
+.cta-btn:hover {
+    background-color: #014700;
+}
+
+/* Home Page Styling */
+.intro {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+.intro h2 {
+    color: #019B00;
+}
+
+.intro p {
+    font-size: 1.1rem;
+    margin: 1rem 0;
+}
+
+/* Section Styling */
+section {
+    padding: 1.5rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+section h2, section h3 {
+    color: #014700;
+    margin-bottom: 1rem;
+}
+
+section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1.2rem;
+}
+
+section ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 1.5rem;
+}
+
+section ul li {
+    margin-bottom: 0.5rem;
+    font-size: 1.05rem;
+}
+
+/* Footer */
+footer {
+    background-color: #e0e0e0;
+    color: #014700;
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Community Resources Section */
+#resource-section {
+    padding: 1.5rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 2rem;
+}
+
+#resource-section h3 {
+    text-align: center;
+    color: #014700;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+/* Grid Layout for Resources */
+.resource-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.resource-item {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.resource-item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.resource-item p {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Favorite Button Styling */
+.favorite-btn {
+    background-color: #019B00;
+    color: #ffffff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.favorite-btn:hover {
+    background-color: #014700;
+}
+
+/* Highlight Favorited Items */
+.favorite-btn.favorited {
+    background-color: #ffca28;
+    color: #333;
+}
+
+.favorite-btn.favorited:hover {
+    background-color: #ffb300;
+}
+/* Centering CTA Button in Get Started Section */
+.get-started {
+    text-align: center;
+}
+
+.get-started .cta-btn {
+    display: inline-block;
+    margin-top: 1rem;
+}
